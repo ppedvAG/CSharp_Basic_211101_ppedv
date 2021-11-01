@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31729.503
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modul02_HelloWorld", "HelloWorld\Modul02_HelloWorld.csproj", "{501883B6-DC65-450C-975D-88DD23027CE1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab02_Geschwindigkeiten", "Geschwindigkeiten\Lab02_Geschwindigkeiten.csproj", "{8636941E-9BF9-4BCA-9A7B-FE1691568C2A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{501883B6-DC65-450C-975D-88DD23027CE1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{501883B6-DC65-450C-975D-88DD23027CE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{501883B6-DC65-450C-975D-88DD23027CE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{501883B6-DC65-450C-975D-88DD23027CE1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8636941E-9BF9-4BCA-9A7B-FE1691568C2A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8636941E-9BF9-4BCA-9A7B-FE1691568C2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8636941E-9BF9-4BCA-9A7B-FE1691568C2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8636941E-9BF9-4BCA-9A7B-FE1691568C2A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {50494354-3690-4A50-87F7-4E92EEE7FDFB}
+	EndGlobalSection
+EndGlobal
