@@ -45,15 +45,19 @@ namespace Schaltjahrrechner_MiniLotto
 
             //2. Aufgabe: Mini-Lotto
 
+            //Deklaration & Initialisierung des Arrays der Gewinnzahlen
             int[] gewinnzahlen = { 3, 16, 45, 79, 99 };
 
+            //Abfrage des User-Tipps
             Console.Write("Bitte gib deinen Tipp ab (Ganzzahl zwischen 0 und 100): ");
             int tipp = int.Parse(Console.ReadLine());
 
+            //Prüfung des Zahlenbereiches des Tipps
             if(tipp < 0 || tipp > 100)
                 Console.WriteLine("Dein Tipp ist außerhalb des Zahlenbereiches.");
             else
             {
+                //Prüfung, ob Tipp eine Gewinnzahl ist und Ausgabe
                 if (gewinnzahlen.Contains(tipp))
                     Console.WriteLine("Glückwunsch!! Du hast eine der fünf Gewinnzahlen getippt.");
                 else

@@ -3,6 +3,8 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>net5.0</TargetFramework>
+    <AssemblyName>Modul04_Schleifen_Enums</AssemblyName>
+    <RootNamespace>Schleifen_Enums</RootNamespace>
   </PropertyGroup>
 
 </Project>
