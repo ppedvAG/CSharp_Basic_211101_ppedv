@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modul03_Arrays_Bedingungen"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab03_Schaltjahrrechner_MiniLotto", "Schaltjahrrechner_MiniLotto\Lab03_Schaltjahrrechner_MiniLotto.csproj", "{26620878-A10B-4760-9576-B445CEA40A60}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Schleifen_Enums", "Schleifen_Enums\Schleifen_Enums.csproj", "{F091F5FA-80C5-4890-A6A7-42D762E02DA5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{26620878-A10B-4760-9576-B445CEA40A60}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{26620878-A10B-4760-9576-B445CEA40A60}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{26620878-A10B-4760-9576-B445CEA40A60}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F091F5FA-80C5-4890-A6A7-42D762E02DA5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F091F5FA-80C5-4890-A6A7-42D762E02DA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F091F5FA-80C5-4890-A6A7-42D762E02DA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F091F5FA-80C5-4890-A6A7-42D762E02DA5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
