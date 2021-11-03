@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using System.Text.RegularExpressions;
 
 namespace Taschenrechner
@@ -23,7 +24,7 @@ namespace Taschenrechner
 
                 //Anzeige der möglichen Rechenoperationen
                 Console.WriteLine("\nWähle eine Rechenoperation:");
-                for (int i = 1; i < 5; i++)
+                for (int i = 1; i <= Enum.GetValues(typeof(Rechenoperation)).Length; i++)
                 {
                     Console.WriteLine($"{i}: {(Rechenoperation)i}");
                 }

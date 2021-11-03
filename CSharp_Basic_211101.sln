@@ -7,13 +7,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Modul02_HelloWorld", "Hello
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lab02_Geschwindigkeiten", "Geschwindigkeiten\Lab02_Geschwindigkeiten.csproj", "{8636941E-9BF9-4BCA-9A7B-FE1691568C2A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modul03_Arrays_Bedingungen", "Array_Bedingungen\Modul03_Arrays_Bedingungen.csproj", "{67822AB0-08E8-4068-BA04-B013384E22A4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Modul03_Arrays_Bedingungen", "Array_Bedingungen\Modul03_Arrays_Bedingungen.csproj", "{67822AB0-08E8-4068-BA04-B013384E22A4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab03_Schaltjahrrechner_MiniLotto", "Schaltjahrrechner_MiniLotto\Lab03_Schaltjahrrechner_MiniLotto.csproj", "{26620878-A10B-4760-9576-B445CEA40A60}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lab03_Schaltjahrrechner_MiniLotto", "Schaltjahrrechner_MiniLotto\Lab03_Schaltjahrrechner_MiniLotto.csproj", "{26620878-A10B-4760-9576-B445CEA40A60}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modul04_Schleifen_Enums", "Schleifen_Enums\Modul04_Schleifen_Enums.csproj", "{F091F5FA-80C5-4890-A6A7-42D762E02DA5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Modul04_Schleifen_Enums", "Schleifen_Enums\Modul04_Schleifen_Enums.csproj", "{F091F5FA-80C5-4890-A6A7-42D762E02DA5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab04_Taschenrechner", "Taschenrechner\Lab04_Taschenrechner.csproj", "{1A5A7698-A010-4E6F-ADA7-FA3C1DC52451}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lab04_Taschenrechner", "Taschenrechner\Lab04_Taschenrechner.csproj", "{1A5A7698-A010-4E6F-ADA7-FA3C1DC52451}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Funktionen", "Funktionen\Funktionen.csproj", "{B484ABC0-1BDD-45C1-A279-D0D1E786F68A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{1A5A7698-A010-4E6F-ADA7-FA3C1DC52451}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1A5A7698-A010-4E6F-ADA7-FA3C1DC52451}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1A5A7698-A010-4E6F-ADA7-FA3C1DC52451}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B484ABC0-1BDD-45C1-A279-D0D1E786F68A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B484ABC0-1BDD-45C1-A279-D0D1E786F68A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B484ABC0-1BDD-45C1-A279-D0D1E786F68A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B484ABC0-1BDD-45C1-A279-D0D1E786F68A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
