@@ -15,7 +15,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Modul04_Schleifen_Enums", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lab04_Taschenrechner", "Taschenrechner\Lab04_Taschenrechner.csproj", "{1A5A7698-A010-4E6F-ADA7-FA3C1DC52451}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Funktionen", "Funktionen\Funktionen.csproj", "{B484ABC0-1BDD-45C1-A279-D0D1E786F68A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modul05_Funktionen", "Funktionen\Modul05_Funktionen.csproj", "{B484ABC0-1BDD-45C1-A279-D0D1E786F68A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modul06_OOP", "OOP\Modul06_OOP.csproj", "{60C8F28A-E3DA-4EF9-8D14-3619BDE89EF9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab05_Taschenrechner", "Taschenrechner2\Lab05_Taschenrechner.csproj", "{C248999B-7981-4F93-B429-0814BE23A25B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +55,14 @@ Global
 		{B484ABC0-1BDD-45C1-A279-D0D1E786F68A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B484ABC0-1BDD-45C1-A279-D0D1E786F68A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B484ABC0-1BDD-45C1-A279-D0D1E786F68A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60C8F28A-E3DA-4EF9-8D14-3619BDE89EF9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60C8F28A-E3DA-4EF9-8D14-3619BDE89EF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60C8F28A-E3DA-4EF9-8D14-3619BDE89EF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60C8F28A-E3DA-4EF9-8D14-3619BDE89EF9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C248999B-7981-4F93-B429-0814BE23A25B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C248999B-7981-4F93-B429-0814BE23A25B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C248999B-7981-4F93-B429-0814BE23A25B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C248999B-7981-4F93-B429-0814BE23A25B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -7,7 +7,7 @@ namespace Taschenrechner
     class Program
     {
         //Enum-Definition
-        enum Rechenoperation { Addition = 1, Subtraktion, Multiplikation, Division}
+        enum Rechenoperation { Addition = 1, Subtraktion, Multiplikation, Division }
 
         static void Main(string[] args)
         {
@@ -50,7 +50,7 @@ namespace Taschenrechner
                         break;
                     case Rechenoperation.Division:
                         //Prüfung einer möglichen Teilung durch null
-                        if(zahl2 == 0)
+                        if (zahl2 == 0)
                         {
                             Console.WriteLine("\nEine Division durch 0 ist nicht erlaubt.");
                             Console.WriteLine("Wiederholen? (Y/N) ");
