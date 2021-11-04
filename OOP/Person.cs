@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace OOP
 {
-    class Person //zur Instanziierung vgl. Program.cs
+    public class Person //zur Instanziierung vgl. Program.cs
     {
         #region Felder und Eigenschaften
         //FELDER (Membervariablen) sind die Variablen einzelner Objekte, welche die Zustände dieser Objekte definieren
@@ -51,11 +51,32 @@ namespace OOP
         #endregion
 
         #region Methoden
+
         //MEMBERMETHODEN sind Funktionen, welche jedes Objekt einer Klasse besitzt und speziell dieses Objekt manipuliert
         public void Altern()
         {
             this.Alter++;
         }
+
+        //Mittels OVERRIDE können Methoden der Mutterklassen, welche mit VIRTUAL markiert sind, überschrieben werden. Bei Aufruf wird die neue Methode ausgeführt.
+        public override string ToString()
+        {
+            return $"{this.Vorname} ist {this.Alter} Jahre alt";
+        }
+
+        #endregion
+
+        #region Statische Member
+
+        //STATISCHE Variablen und Methoden hängen an der Klasse selbst und nicht an instanziierten Objekten. Sie existieren demnach unabhängig von der Anzahl
+        ///Objekte genau einmal. Der Aufruf erfolgt über den Klassenbezeichner.
+        public static int AnzahlPersonen { get; set; } = 0;
+
+        public static string ZeigeAnzahlPersonen()
+        {
+            return $"Es gibt {AnzahlPersonen} Personen.";
+        }
+
         #endregion
 
     }

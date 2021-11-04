@@ -8,6 +8,8 @@ namespace Fahrzeugpark
 {
     public class Fahrzeug
     {
+        #region Modul06 Properties, Methoden, Konstruktor
+
         //Properties
         public string Name { get; set; }
         public int MaxGeschwindigkeit { get; set; }
@@ -16,17 +18,19 @@ namespace Fahrzeugpark
         public bool MotorLäuft { get; set; }
 
         //Konstruktor mit Übergabeparametern und Standartwerten
-        public Fahrzeug(string name, int maxG, double Preis)
+        public Fahrzeug(string name, int maxG, double preis)
         {
             this.Name = name;
             this.MaxGeschwindigkeit = maxG;
-            this.Preis = Preis;
+            this.Preis = preis;
             this.AktGeschwindigkeit = 0;
             this.MotorLäuft = false;
+
+            AnzahlFahrzeuge++;
         }
 
-        //Methode zur Ausgabe von Objektinformationen
-        public string Info()
+        //Methode zur Ausgabe von Objektinformationen | virtual erlaubt das Überschreiben durch erbende Klassen
+        public virtual string Info()
         {
             if (this.MotorLäuft)
                 return $"{this.Name} kostet {this.Preis}€ und fährt momentan mit {this.AktGeschwindigkeit} von maximal {this.MaxGeschwindigkeit}km/h.";
@@ -37,7 +41,7 @@ namespace Fahrzeugpark
         //Methode zum Starten des Motors
         public void StarteMotor()
         {
-            if(this.MotorLäuft)
+            if (this.MotorLäuft)
                 Console.WriteLine($"Der Motor von {this.Name} läuft bereits.");
             else
             {
@@ -51,7 +55,7 @@ namespace Fahrzeugpark
         {
             if (!this.MotorLäuft)
                 Console.WriteLine($"Der Motor von {this.Name} ist bereits gestoppt");
-            else if(this.AktGeschwindigkeit > 0)
+            else if (this.AktGeschwindigkeit > 0)
                 Console.WriteLine($"Der Motor kann nicht gestoppt werden, da sich {this.Name} noch bewegt");
             else
             {
@@ -75,5 +79,24 @@ namespace Fahrzeugpark
                 Console.WriteLine($"{this.Name} bewegt sich jetzt mit {this.AktGeschwindigkeit}km/h");
             }
         }
+
+        #endregion
+
+
+        #region Modul07 Statische Member, Destruktor
+
+        public static int AnzahlFahrzeuge { get; set; } = 0;
+
+        public static string ZeigeAnzahlFahrzeuge()
+        {
+            return $"Es wurden {AnzahlFahrzeuge} Fahrzeuge gebaut.";
+        }
+
+        ~Fahrzeug()
+        {
+            Console.WriteLine($"{this.Name} wurde gerade verschrottet.");
+        } 
+
+        #endregion
     }
 }
