@@ -53,34 +53,68 @@ namespace OOP
 
             #region Modul 09: Polymorphismus
 
-            //Deklaration einer Bsp-Variablen
-            Person person;
-            //Instanziierung eines abgeleiteten Objekts
-            Arbeitnehmer an = new Arbeitnehmer("Hanna", 35, "Finanzen");
+            ////Deklaration einer Bsp-Variablen
+            //Person person;
+            ////Instanziierung eines abgeleiteten Objekts
+            //Arbeitnehmer an = new Arbeitnehmer("Hanna", 35, "Finanzen");
 
-            //Zuweisung des abgeleiteten Objekts zu Variable der Mutterklasse
-            person = (Person)an;
+            ////Zuweisung des abgeleiteten Objekts zu Variable der Mutterklasse
+            //person = (Person)an;
 
-            //Tests des Laufzeittyps (des beinhalteten Objekts)
-            if (person.GetType() == typeof(Arbeitnehmer))
-                Console.WriteLine("Person hat Arbeit");
+            ////Tests des Laufzeittyps (des beinhalteten Objekts)
+            //if (person.GetType() == typeof(Arbeitnehmer))
+            //    Console.WriteLine("Person hat Arbeit");
 
-            if (person is Arbeitnehmer)
-                Console.WriteLine("Person hat Arbeit");
+            //if (person is Arbeitnehmer)
+            //    Console.WriteLine("Person hat Arbeit");
 
-            //überschriebene Methoden werden trotzdem ausgeführt
-            Console.WriteLine(person.ToString());
+            ////überschriebene Methoden werden trotzdem ausgeführt
+            //Console.WriteLine(person.ToString());
 
-            if (person is Arbeitnehmer)
-            {
-                //Rückcast des abgeleiteten Objekts aus Mutterklassevariablen in abgeleitete Variable
-                Arbeitnehmer an2 = (Arbeitnehmer)person;
-            } 
+            //if (person is Arbeitnehmer)
+            //{
+            //    //Rückcast des abgeleiteten Objekts aus Mutterklassevariablen in abgeleitete Variable
+            //    Arbeitnehmer an2 = (Arbeitnehmer)person;
+            //} 
 
             #endregion
 
 
+            #region Modul 10: Interfaces
+
+            //Instanziierung eines Beispiel-Objekts
+            Arbeitnehmer an = new Arbeitnehmer("Hanna", 35, "Finanzen");
+            //Betrachtung des Objekts als Objekt des Interfaces
+            ILohn lohnerhaltendesObjekt = an;
+            //Zugriff auf Interface-Methode
+            lohnerhaltendesObjekt.Auszahlung();
+            //Übergabe an Methode, welche ein Objekt des Interfaces erwartet
+            Gehaltserhöhung(lohnerhaltendesObjekt);
+            //Übergabe benötigt keinen Cast aus implementierender Klasse
+            Gehaltserhöhung(an);
+
+            //Aufrzf der Clone()-Funktion des IClonable-Interfaces
+            Arbeitnehmer kopierterAn = (Arbeitnehmer)an.Clone(); 
+            #endregion
 
         }
+
+        #region Modul 10: Interfaces
+
+        //Bsp-Methode, welche ein Objekt vom Typ des Interfaces verlangt
+        public static void Gehaltserhöhung(ILohn lohn)
+        {
+            lohn.Gehalt += 100;
+
+            //Prüfun des Objekts auf Laufzeittyp
+            if (lohn is Arbeitnehmer)
+            {
+                //Cast
+                Arbeitnehmer an = (Arbeitnehmer)lohn;
+                an.Essen();
+            }
+        } 
+
+        #endregion
     }
 }
