@@ -9,7 +9,7 @@ namespace Fahrzeugpark
             //Ändern des durch Console verwendeten Zeichensatzes auf Unicode (damit das €-Zeichen angezeigt werden kann)
             Console.OutputEncoding = System.Text.Encoding.UTF8;
 
-            #region Modul 06 Fahrzeug-Klasse
+            #region Lab 06: Fahrzeug-Klasse
             ////Deklaration einer Fahrzeug-Variablen und Initialisierung mittels einer Fahrzeug-Instanz
             //Fahrzeug fz1 = new Fahrzeug("Mercedes", 190, 23000);
             ////Ausführen der Info()-Methode des Fahrzeugs und Ausgabe in der Konsole
@@ -31,7 +31,7 @@ namespace Fahrzeugpark
             //Console.WriteLine(fz1.Info() + "\n"); 
             #endregion
 
-            #region Modul 07 GC und statische Member
+            #region Lab 07: GC und statische Member
 
             //Fahrzeug fz1 = new Fahrzeug("BMW", 230, 25999.99);
             //for (int i = 0; i < 1000; i++)
@@ -46,17 +46,62 @@ namespace Fahrzeugpark
 
             #endregion
 
-            #region Modul 08 Vererbung
+            #region Lab 08: Vererbung
 
-            //Instanziierung verschiedener Fahrzeuge
-            PKW pkw1 = new PKW("Mercedes", 210, 23000, 5);
-            Schiff schiff1 = new Schiff("Titanic", 40, 25000000, Schiff.SchiffsTreibstoff.Dampf);
-            Flugzeug flugzeug1 = new Flugzeug("Boing", 350, 90000000, 9800);
+            ////Instanziierung verschiedener Fahrzeuge
+            //PKW pkw1 = new PKW("Mercedes", 210, 23000, 5);
+            //Schiff schiff1 = new Schiff("Titanic", 40, 25000000, Schiff.SchiffsTreibstoff.Dampf);
+            //Flugzeug flugzeug1 = new Flugzeug("Boing", 350, 90000000, 9800);
 
-            //Ausgabe der verschiedenen Info()-Methoden
-            Console.WriteLine(pkw1.Info());
-            Console.WriteLine(schiff1.Info());
-            Console.WriteLine(flugzeug1.Info()); 
+            ////Ausgabe der verschiedenen Info()-Methoden
+            //Console.WriteLine(pkw1.Info());
+            //Console.WriteLine(schiff1.Info());
+            //Console.WriteLine(flugzeug1.Info()); 
+
+            #endregion
+
+            #region Lab 09: Polymorphismus
+
+            //Arraydeklarierung
+            Fahrzeug[] fahrzeuge = new Fahrzeug[10];
+            //Instanziierung eines Random-Objekts zur Zufallszahlgenerierung
+            Random random = new Random();
+
+            //Schleife über das Array zur Befüllung
+            for (int i = 0; i < fahrzeuge.Length; i++)
+            {
+                //Generierung der Zufallszahl
+                switch (random.Next(1, 4))
+                {
+                    //Instanziierung der jeweiligen spezifischen Fahrzeuge
+                    case 1:
+                        fahrzeuge[i] = new PKW("Mercedes", 210, 23000, 5);
+                        break;
+                    case 2:
+                        fahrzeuge[i] = new Schiff("Titanic", 40, 25000000, Schiff.SchiffsTreibstoff.Dampf);
+                        break;
+                    case 3:
+                        fahrzeuge[i] = new Flugzeug("Boing", 350, 90000000, 9800); ;
+                        break;
+                }
+            }
+
+            //Deklarierung/Initialisierung der Zählvariablen
+            int pkws = 0, schiffe = 0, flugzeuge = 0;
+
+            //Schleife über das Array zur Identifizierung der Objekttypen
+            foreach (var item in fahrzeuge)
+            {
+                //Prügun des Objektstyps und Hochzählen der entsprechenden Variablen
+                if (item is PKW) pkws++;
+                else if (item is Schiff) schiffe++;
+                else flugzeuge++;
+            }
+
+            //Ausgabe
+            Console.WriteLine($"Es wurden {pkws} PKW(s), {flugzeuge} Flugzeug(e) und {schiffe} Schiff(e) produziert.");
+            //Ausführung der abstrakten Methode
+            fahrzeuge[3].Hupen(); 
 
             #endregion
         }

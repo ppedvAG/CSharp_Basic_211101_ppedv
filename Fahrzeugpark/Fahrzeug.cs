@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Fahrzeugpark
 {
-    public class Fahrzeug
+    public abstract class Fahrzeug
     {
-        #region Modul06 Properties, Methoden, Konstruktor
+        #region Lab 06: Properties, Methoden, Konstruktor
 
         //Properties
         public string Name { get; set; }
@@ -83,7 +83,7 @@ namespace Fahrzeugpark
         #endregion
 
 
-        #region Modul07 Statische Member, Destruktor
+        #region MLab 07: Statische Member, Destruktor
 
         public static int AnzahlFahrzeuge { get; set; } = 0;
 
@@ -95,8 +95,14 @@ namespace Fahrzeugpark
         ~Fahrzeug()
         {
             Console.WriteLine($"{this.Name} wurde gerade verschrottet.");
-        } 
+        }
 
+        #endregion
+
+        #region  Lab 08: Abstract
+
+        public abstract void Hupen();
+        
         #endregion
     }
 }

@@ -25,5 +25,11 @@ namespace OOP
         {
             return base.ToString() + $" und arbeitet in der {this.Abteilung}.";
         }
+
+        //Durch Mutterklasse erzwungene (weil dort abstrakte) Methode
+        public override void Essen()
+        {
+            Console.WriteLine("Kantinenessen");
+        }
     }
 }

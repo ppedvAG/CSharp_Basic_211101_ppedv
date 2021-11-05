@@ -17,13 +17,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lab04_Taschenrechner", "Tas
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Modul05_Funktionen", "Funktionen\Modul05_Funktionen.csproj", "{B484ABC0-1BDD-45C1-A279-D0D1E786F68A}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Modul06_OOP", "OOP\Modul06_OOP.csproj", "{60C8F28A-E3DA-4EF9-8D14-3619BDE89EF9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Modul06-09_OOP", "OOP\Modul06-09_OOP.csproj", "{60C8F28A-E3DA-4EF9-8D14-3619BDE89EF9}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lab05_Taschenrechner", "Taschenrechner2\Lab05_Taschenrechner.csproj", "{C248999B-7981-4F93-B429-0814BE23A25B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fahrzeugpark", "Fahrzeugpark\Fahrzeugpark.csproj", "{4E136209-2E68-4516-8094-C4F46000245A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fahrzeugpark", "Fahrzeugpark\Fahrzeugpark.csproj", "{4E136209-2E68-4516-8094-C4F46000245A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modul07_Werte_Referenzen", "Werte_Referenzen\Modul07_Werte_Referenzen.csproj", "{5BAB0F68-D0FE-4614-A01A-257BCFF4C954}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Modul07_Werte_Referenzen", "Werte_Referenzen\Modul07_Werte_Referenzen.csproj", "{5BAB0F68-D0FE-4614-A01A-257BCFF4C954}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
