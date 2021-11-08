@@ -1,0 +1,34 @@
+using Microsoft.VisualStudio.TestTools.UnitTesting;
+
+//Mittels UNIT-Tests können Klassen kleinteilig langfristig getestet werden.
+namespace UnitTestFahrzeuge
+{
+    [TestClass]
+    public class PKW_Test
+    {
+        //Test-Methoden werden durch den TestExplorer von VisualStudio als solche erkannt und können über diesen ausgeführt werden.
+        [TestMethod]
+        public void Beschleunige_PKW_ueber_MaxG()
+        {
+            Fahrzeugpark.PKW pkw = new Fahrzeugpark.PKW("BMW", 230, 25000, 3);
+
+            pkw.StarteMotor();
+            pkw.Beschleunige(240);
+
+            //Jede Test-Methode benötigt mindestens einen Aufruf der ASSERT-Klasse, in welcher die Erfolgsbedingung des Tests überprüft wird
+            Assert.AreEqual(pkw.MaxGeschwindigkeit, pkw.AktGeschwindigkeit);
+        }
+
+        [TestMethod]
+        public void Bremse_PKW_unter_0()
+        {
+            Fahrzeugpark.PKW pkw = new Fahrzeugpark.PKW("BMW", 230, 25000, 3);
+
+            pkw.StarteMotor();
+            pkw.Beschleunige(200);
+            pkw.Beschleunige(-300);
+
+            Assert.AreEqual(0, pkw.AktGeschwindigkeit);
+        }
+    }
+}

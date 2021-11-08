@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace Fahrzeugpark
 {
     //vgl. Schiff
-    class PKW : Fahrzeug
+    public class PKW : Fahrzeug
     {
         public int AnzahlTueren { get; set; }
 
