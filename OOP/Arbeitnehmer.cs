@@ -52,5 +52,13 @@ namespace OOP
             an.Chef = this.Chef;
             return an;
         }
+
+        //Alternativ zu IClonable kann ein Kopierkonstruktor zur DUblizierung verwendet werden. Hier werden die Werte und Referenzen koiert und übertragen
+        public Arbeitnehmer(Arbeitnehmer alterArbeitnehmer)
+        {
+            this.Vorname = alterArbeitnehmer.Vorname;
+            this.Alter = alterArbeitnehmer.Alter;
+            //...
+        }
     }
 }
