@@ -49,6 +49,10 @@ namespace Lab12_ExcpetionHandling
                     Console.WriteLine("Du hast ein nicht-erlaubtes Rechenzeichen verwendet.\n");
                     wiederholen = true;
                 }
+                catch (Exception)
+                {
+
+                }
             } while (wiederholen);
         }
 
