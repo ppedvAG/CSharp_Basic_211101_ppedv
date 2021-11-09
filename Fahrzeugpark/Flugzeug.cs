@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace Fahrzeugpark
 {
     //vgl. Schiff
-    class Flugzeug : Fahrzeug
+    public class Flugzeug : Fahrzeug
     {
         public int MaxFlughöhe { get; set; }
 

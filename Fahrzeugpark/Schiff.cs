@@ -8,7 +8,7 @@ namespace Fahrzeugpark
 {
     //Schiff erbt von der Fahrzeug-Klasse und übernimmt deren Member
     //Durch die Implemetierung eines Interfaces können Objekte dieser Klasse auch als Objekte des Interfaces betrachtet werden
-    class Schiff : Fahrzeug, IBeladbar
+    public class Schiff : Fahrzeug, IBeladbar
     {
         //Klasseneigener Enum
         public enum SchiffsTreibstoff { Diesel = 0, Dampf, Wind, Muskelkraft }

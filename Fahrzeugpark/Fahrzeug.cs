@@ -38,6 +38,12 @@ namespace Fahrzeugpark
                 return $"{this.Name} kostet {this.Preis}€ und könnte maximal {this.MaxGeschwindigkeit}km/h fahren.";
         }
 
+        //override ToString() überschreib die Standart-ToString()-Methode
+        public override string ToString()
+        {
+            return this.GetType().Name + ": " + this.Name;
+        }
+
         //Methode zum Starten des Motors
         public void StarteMotor()
         {
