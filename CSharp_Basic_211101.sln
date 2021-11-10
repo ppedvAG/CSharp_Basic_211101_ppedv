@@ -39,7 +39,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Modul14_WinForms", "WinForm
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lab14_FahrzeugGUI", "FahrzeugGUI\Lab14_FahrzeugGUI.csproj", "{8BD23928-197B-41F7-B405-8FA6D2855BB5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dateien", "Dateien\Dateien.csproj", "{EC24A7DC-4B1F-41E7-898F-3FAD996F2086}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modul15_Dateien", "Dateien\Modul15_Dateien.csproj", "{EC24A7DC-4B1F-41E7-898F-3FAD996F2086}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfTest", "WpfTest\WpfTest.csproj", "{DBEBC83B-65C1-4650-ABC1-2B2813FC62CA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -123,6 +125,10 @@ Global
 		{EC24A7DC-4B1F-41E7-898F-3FAD996F2086}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EC24A7DC-4B1F-41E7-898F-3FAD996F2086}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EC24A7DC-4B1F-41E7-898F-3FAD996F2086}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DBEBC83B-65C1-4650-ABC1-2B2813FC62CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DBEBC83B-65C1-4650-ABC1-2B2813FC62CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DBEBC83B-65C1-4650-ABC1-2B2813FC62CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DBEBC83B-65C1-4650-ABC1-2B2813FC62CA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

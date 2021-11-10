@@ -108,7 +108,20 @@ namespace Fahrzeugpark
         #region  Lab 08: Abstract
 
         public abstract void Hupen();
-        
+
+        #endregion
+
+        #region Operatoren
+
+        public static bool operator >(Fahrzeug fz1, Fahrzeug fz2)
+        {
+            return fz1.MaxGeschwindigkeit > fz2.MaxGeschwindigkeit;
+        }
+        public static bool operator <(Fahrzeug fz1, Fahrzeug fz2)
+        {
+            return fz1.MaxGeschwindigkeit < fz2.MaxGeschwindigkeit;
+        } 
+
         #endregion
     }
 }
